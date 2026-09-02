@@ -10,4 +10,4 @@ cd ex1
 
 Kompiler program: 
 
-gcc -std=gnu11 -Wall -o taskA taskA.c
+gcc -std=gnu11 -Wall -o taskA_sleep taskA_sleep.c
