@@ -8,7 +8,6 @@ int main(void) {
     memset(histogram, 0, sizeof(histogram));
 
     struct tms buffer;
-    long ticks_per_second = sysconf(_SC_CLK_TCK);
 
     for (int i = 0; i < 1000000; i++) {
         clock_t t1 = times(&buffer);
