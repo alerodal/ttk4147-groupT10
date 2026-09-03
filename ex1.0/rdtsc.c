@@ -11,7 +11,7 @@ uint64_t rdtsc(void){
 }
 
 int main(void){
-	int ns_max = 500;
+	int ns_max = 50;
 	int histogram[ns_max];
 	memset(histogram, 0, sizeof(histogram));
 
