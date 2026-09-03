@@ -11,9 +11,9 @@ uint64_t rdtsc(void){
 }
 
 int main(void){
-	int ns_max = 50;
+	int ns_max = 100;
 	int histogram[ns_max];
-	memset(histogram, 0, sizeof(histogram));
+	memset(histogram, 0, sizeof(int)*ns_max);
 
 	for(int i = 0; i < 10*1000*1000; i++){
     
