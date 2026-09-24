@@ -1,0 +1,20 @@
+Task B
+Data Race. Both threads fighting over the same variable
+
+Task C:
+Code before sync uses more sys time. Because the data race makes the processor work more.
+Code after sync uses more user time. Because semaphore makes each thread wait.
+Dunno
+
+Task D
+low    :--        ------
+medium :  --------
+high   :                -----------
+
+Task E
+low    :---   ---
+medium :   ---         ---
+high   :         ------
+
+Task F
+The singleton pointer is made visible before the singleton has finished initializing. Other threads see that g_singleton is non-NULL, skip the semaphore, and access the object while its members are still being written. Creates a Data Race
