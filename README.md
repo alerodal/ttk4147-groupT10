@@ -11,3 +11,5 @@ cd ex1
 Kompiler program: 
 
 gcc -std=gnu11 -Wall -o taskA_sleep taskA_sleep.c
+
+ls -l /dev/ttyS* /dev/ttyUSB* /dev/ttyACM* 2>/dev/null
